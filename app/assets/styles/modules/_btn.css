@@ -1,0 +1,53 @@
+.btn {
+  text-align: center;
+  font-weight: 600;
+  padding: 10px 25px;
+  border-radius: 1000px;
+  transition: all .3s ease-out;
+  border-width: 2px;
+  border-style: solid;
+  display: inline-block;;
+
+  &--filled {
+    &--yellow {
+      color: $mainGrey;
+      border-color: $mainYellow;
+      background-color: $mainYellow;
+
+      &:hover {
+        color: $mainYellow;
+        background-color: transparent;
+      }
+    }
+
+    &--white {
+      color: #fff;
+      background-color: #fff;
+
+      &:hover {
+        border-color: #404040;
+        background-color: #404040;
+      }
+    }
+  }
+
+  &--clear {
+    border-width: 2px;
+    border-style: solid;
+
+    &--yellow {
+      color: $mainYellow;
+      border-color: $mainYellow;
+    }
+
+    &--white {
+      color: #fff;
+      border-color: #fff;
+
+      &:hover {
+        color: $mainGrey;
+        background-color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.row {
+
+  @mixin clearfix;
+
+  @mixin atLarge {
+    &__large-6 {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  /* Begin Equal Height Rules */
+    .flexbox &--equal-height-at-medium {
+        @mixin atMedium {
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+
+    .flexbox &--equal-height-at-large {
+        @mixin atLarge {
+            display: flex;
+        }
+
+        & > div {
+            float: none;
+            display: flex;
+        }
+    }
+
+}

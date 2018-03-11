@@ -1,0 +1,21 @@
+.site-footer {
+  background-color: $mainGrey;
+  color: #fff;
+
+  &__link-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__link-list-item {
+    padding-bottom: .5rem;
+  }
+
+  &__link-list-item:last-child {
+    padding: 0;
+  }
+
+  &__text {
+    text-align: center;
+  }
+}
